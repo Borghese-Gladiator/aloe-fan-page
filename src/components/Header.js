@@ -1,5 +1,6 @@
 import React from 'react'
 import manoImg from "../assets/Mano_Aloe_Portrait.png"
+import manogSvg from "../assets/Twemoji12_1f445.svg"
 import manoWideImg from "../assets/Mano_Aloe_Border.jpg"
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -7,9 +8,12 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 export default function Header() {
   return (
     <header className="App-header">
-      <img src={manoWideImg} />
-      <img src={manoImg} className="App-logo" alt="logo" />
-      <h1>	魔の友 (Manotomo)</h1>
+      <img src={manoWideImg} alt="Mano Background"/>
+      <div style={{display:"flex"}}>
+        <img src={manogSvg} className="App-logo" alt="logo" style={{maxWidth:"100px", maxHeight: "100px"}}/>
+        <h1>👅 魔の友 (Manotomo) 👅</h1>
+        <img src={manogSvg} className="App-logo" alt="logo" style={{maxWidth:"100px", maxHeight: "100px"}}/>
+      </div>
       <div>
         <a
           className="App-link"

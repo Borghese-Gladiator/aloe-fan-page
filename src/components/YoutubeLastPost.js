@@ -4,9 +4,11 @@ import Grid from '@material-ui/core/Grid'
 import manoSongVid from '../assets/141s_to_236s_【初配信】ホロライブ5期生、魔乃アロエだぞ【_ほろふぁいぶ】.mp4'
 
 export default function YoutubeLastPost() {
-
+  const backgroundStyling = {
+    backgroundColor: "white"
+  }
   return (
-    <Container>
+    <Container style={backgroundStyling}>
       <h1>Latest from Youtube</h1>
       <iframe width="1019" height="573" src= "https://www.youtube.com/embed/ZgkLtMAQ0rI?start=33&end=200" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </Container>

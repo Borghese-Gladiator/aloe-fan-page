@@ -39,6 +39,7 @@ function App() {
       <YoutubeLastPost />
       <TwitterLastPost />
       <StickerList />
+      <div style={{height:"1000px"}} />
       <ExitFooter />
       <Footer />
     </div>

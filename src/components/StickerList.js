@@ -61,6 +61,9 @@ function StickerObj(path, title, siteSource, url) {
 }
 
 export default function StickerList() {
+  const backgroundStyling = {
+    backgroundColor: "white"
+  }
   // using name to match source/url data with image file in folder
   const urlArr = [
     { name: "./Aloe-Shamiko-Edit.gif", source: "reddit", url: "https://www.reddit.com/r/Hololive/comments/ibnkxi/just_want_to_cheer_up_aloe_and_all_fans_of_her/" },
@@ -97,7 +100,7 @@ export default function StickerList() {
   })(require.context('../assets/img', true, /.*/)); // Import all image assets
   
   return ( 
-    <Container>
+    <Container style={backgroundStyling}>
       <h1 style={{
         backgroundColor: "rgb(242, 196, 141)",
         color: "#FFF",
