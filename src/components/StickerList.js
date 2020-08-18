@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button'
-import { Card, CardContent, CardActionArea, Typography, CardActions } from '@material-ui/core'
+import { Card, CardContent, CardActionArea, CardActions } from '@material-ui/core'
 import RedditIcon from '@material-ui/icons/Reddit';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
@@ -53,13 +53,6 @@ function StickerCard(props) {
   )
 }
 
-function StickerObj(path, title, siteSource, url) {
-  this.path = path
-  this.title = title
-  this.source = siteSource
-  this.url = url
-}
-
 export default function StickerList() {
   const backgroundStyling = {
     backgroundColor: "white"
@@ -78,8 +71,7 @@ export default function StickerList() {
     { name: "./83532087_p0_master1200.jpg", source: "pixiv", url: "https://www.pixiv.net/en/artworks/83532087" },
     { name: "./83574888_p0_master1200.jpg", source: "pixiv", url: "https://www.pixiv.net/en/artworks/83574888" },
     { name: "./83504226_p0_master1200.jpg", source: "reddit", url: "https://www.pixiv.net/en/artworks/83504226" },
-    { name: "./ezgif-4-2773c80882d9.gif", source: "reddit", url: "https://www.reddit.com/r/Hololive/comments/ibz1h4/we_miss_you/" },
-    
+    { name: "./ezgif-4-2773c80882d9.gif", source: "reddit", url: "https://www.reddit.com/r/Hololive/comments/ibz1h4/we_miss_you/" }
   ]
   const stickerList = (ctx => {
     let keys = ctx.keys();

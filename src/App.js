@@ -6,21 +6,7 @@ import StickerList from './components/StickerList'
 import ExitFooter from './components/ExitFooter'
 import Footer from './components/Footer'
 import './App.css';
-
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-}));
+import manoMP3 from './assets/LOADING_AUDIO_3s_to_17s_【初配信】ホロライブ5期生、魔乃アロエだぞ【_ほろふぁいぶ】.mp3'
 
 const AvatarComponent = lazy(() => import('./components/Header'));
 
@@ -31,7 +17,6 @@ const DetailsComponent = () => (
 )
 
 function App() {
-  const classes = useStyles();
 
   return (
     <div className="App">
