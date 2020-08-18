@@ -5,6 +5,8 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button'
 import { Card, CardContent, CardActionArea, Typography, CardActions } from '@material-ui/core'
+import RedditIcon from '@material-ui/icons/Reddit';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,13 +29,13 @@ function StickerCard(props) {
   const renderSwitch = (param) => {
     switch(param) {
       case 'twitter':
-        return <Button size="small" color="primary" onClick={handleButtonClick}>Twitter</Button>
+        return <Button size="small" color="primary" onClick={handleButtonClick}>Twitter <TwitterIcon /></Button>
       case 'reddit':
-        return <Button size="small" color="primary" onClick={handleButtonClick}>Reddit</Button>
+        return <Button size="small" color="primary" onClick={handleButtonClick}>Reddit <RedditIcon /></Button>
       case 'pixiv':
         return <Button size="small" color="primary" onClick={handleButtonClick}>Pixiv</Button>
       default:
-        return <Button size="small" color="primary" onClick={handleButtonClick}>Reddit</Button>
+        return <Button size="small" color="primary" onClick={handleButtonClick}>Reddit <RedditIcon /></Button>
     }
   }
 
@@ -72,7 +74,9 @@ export default function StickerList() {
     { name: "./83635420_p0_master1200.jpg", source: "pixiv", url: "https://www.pixiv.net/en/artworks/83635420" },
     { name: "./83532087_p0_master1200.jpg", source: "pixiv", url: "https://www.pixiv.net/en/artworks/83532087" },
     { name: "./83574888_p0_master1200.jpg", source: "pixiv", url: "https://www.pixiv.net/en/artworks/83574888" },
-    { name: "./83504226_p0_master1200.jpg", source: "reddit", url: "https://www.pixiv.net/en/artworks/83504226" }
+    { name: "./83504226_p0_master1200.jpg", source: "reddit", url: "https://www.pixiv.net/en/artworks/83504226" },
+    { name: "./ezgif-4-2773c80882d9.gif", source: "reddit", url: "https://www.reddit.com/r/Hololive/comments/ibz1h4/we_miss_you/" },
+    
   ]
   const stickerList = (ctx => {
     let keys = ctx.keys();
@@ -103,7 +107,7 @@ export default function StickerList() {
         Stickers List
       </h1>
       <h3>Instructions</h3>
-      <p>Click on emoji to copy link to clipboard and Ctrl+V paste into Discord DM</p>
+      <p>Click on emoji to copy link to clipboard and Ctrl+V paste</p>
       <Grid container justify="center" spacing={3}>
         {stickerList.map((val, idx) => (
           <Grid key={"VTuber_Card_" + idx} item xs={3}>

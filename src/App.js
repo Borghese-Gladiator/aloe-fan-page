@@ -1,9 +1,10 @@
 import React, { lazy } from 'react';
 import Header from './components/Header'
-import Navbar from './components/Navbar'
 import TwitterLastPost from './components/TwitterLastPost'
 import YoutubeLastPost from './components/YoutubeLastPost'
 import StickerList from './components/StickerList' 
+import ExitFooter from './components/ExitFooter'
+import Footer from './components/Footer'
 import './App.css';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -35,18 +36,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Navbar />
-      <Grid container spacing={3}>
-        <Grid item xs={10}>
-          <Paper className={classes.paper}>xs=6</Paper>
-        </Grid>
-        <Grid item xs={2}>
-          <Paper className={classes.paper}>xs=6</Paper>
-        </Grid>
-      </Grid>
       <YoutubeLastPost />
       <TwitterLastPost />
       <StickerList />
+      <ExitFooter />
+      <Footer />
     </div>
   );
 }

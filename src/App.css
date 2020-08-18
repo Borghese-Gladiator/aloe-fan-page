@@ -1,3 +1,7 @@
+body {
+  background-image: url('assets/3_5s_to_9s_【初配信】ホロライブ5期生、魔乃アロエだぞ【_ほろふぁいぶ】.gif');
+}
+
 .App {
   text-align: center;
 }
@@ -15,6 +19,10 @@
 
 .App-header {
   background-color: #282c34;
+/*  
+  background-image: url('assets/Mano_Aloe_Border.jpg');
+  background-repeat: no-repeat;
+*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
